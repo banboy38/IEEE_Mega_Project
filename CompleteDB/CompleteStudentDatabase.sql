@@ -209,6 +209,8 @@ CREATE TABLE `trialprof` (
   `name` varchar(250) DEFAULT NULL,
   `department` varchar(250) DEFAULT NULL,
   `position` varchar(250) DEFAULT NULL,
+  `user` varchar(250) DEFAULT NULL,
+  `pass` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -219,7 +221,7 @@ CREATE TABLE `trialprof` (
 
 LOCK TABLES `trialprof` WRITE;
 /*!40000 ALTER TABLE `trialprof` DISABLE KEYS */;
-INSERT INTO `trialprof` VALUES (1,'SRIKANTA PAL','ECE','Head of Department'),(2,'DILEEP KUMAR UPADHYAY','ECE','Assistant Professor'),(3,'RUPESH KUMAR SINHA','ECE','Associate Lecturer');
+INSERT INTO `trialprof` VALUES (1,'SRIKANTA PAL','ECE','Head of Department','spal','spece'),(2,'DILEEP KUMAR UPADHYAY','ECE','Assistant Professor','dupadhyay','dkuece'),(3,'RUPESH KUMAR SINHA','ECE','Associate Lecturer','rsinha','rksece'),(4,'SUKANTA KUMAR DASH','ECE','Assistant Professor','sdash','skdece'),(5,'ANIRBAN ADITYA HALDER','ECE','ADMIN','banboy38','aahece'),(6,'BUSHRA AKHTAR','ECE','ADMIN','13ushra_akhtar','baece'),(7,'SOHUM DAMANI','ECE','ADMIN','sohumboi','sdece'),(8,'ABHISHEK PURTY','IT','ADMIN','mc420','apit');
 /*!40000 ALTER TABLE `trialprof` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -232,4 +234,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-10-29 16:23:49
+-- Dump completed on 2020-10-30  5:42:50
