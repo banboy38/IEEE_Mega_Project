@@ -8,6 +8,7 @@
 <?php
     $flag = 1;
     while($row = mysqli_fetch_object($result)) {
+
     if($_POST["username"] == $row->user && $_POST["pass"] == $row->pass) { 
     
     header("Location: home.html");
@@ -25,4 +26,5 @@
     header("Location: indexwrong.html");
     exit;
     }   
-    ?>
+
+ ?>
