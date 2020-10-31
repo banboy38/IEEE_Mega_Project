@@ -167,7 +167,7 @@
 
    <div class="back" style="background-image:url(/bitmesra.jpg);">
 
-      <section style="height:50%;margin-top:10px;position:sticky;opacity:0.8;width:100%"  class="">
+      <section style="height:50%;margin-top:10px;position:sticky;opacity:0.9;width:100%"  class="">
         <div class="mx-auto spacing " style="width:95%;height:50%;">
           <div class="col-md-12">
             <ul class="list-group bg">
