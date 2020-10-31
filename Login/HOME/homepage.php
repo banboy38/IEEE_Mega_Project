@@ -140,7 +140,7 @@
      
 
   
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark container-fluid "  style="color:white;width:100%;margin-top:0px;background-color:rgba(0,139,139,0.9);">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark container-fluid "  style="color:white;width:100%;margin-top:0px;background-color:rgba(0,139,139,0.91);">
      
       
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation ">
@@ -167,8 +167,8 @@
 
    <div class="back" style="background-image:url(/bitmesra.jpg);">
 
-      <section style="height:50%;margin-top:10px;position:sticky;opacity:0.9;width:100%"  class="">
-        <div class="mx-auto spacing " style="width:81%;height:50%;">
+      <section style="height:50%;margin-top:10px;position:sticky;opacity:0.8;width:100%"  class="">
+        <div class="mx-auto spacing " style="width:95%;height:50%;">
           <div class="col-md-12">
             <ul class="list-group bg">
               <li class="list-group-item list-group-item-info" >
@@ -201,6 +201,8 @@
                   </div><hr style="margin-top:28px;width:50%"/>
                 </p>
               </li>
+
+              
 
             </ul>
            </div> 
