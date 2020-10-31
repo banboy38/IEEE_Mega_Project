@@ -7,11 +7,107 @@
 <html>
 
 <head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        nav-link dropdown-toggle a:hover {
+        .parallax {
+              /* The image used */
+              background-image: url("bitmesra.jpeg");
+
+              /* Set a specific height */
+              height: 500px;
+
+              /* Create the parallax scrolling effect */
+              background-attachment: fixed;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+        .back {
+          width: 100%;  
+          min-height: 100vh;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          padding: 15px;
+
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          position: relative;
+          z-index: 1;  
+        }
+
+        .limiter {
+          height: 100%;
+
+        /* Center and scale the image nicely */
+         background-position: center;
+         background-repeat: no-repeat;
+        background-size: cover;
+        }
+
+
+
+        .Container {
+            display: flex;
+            overflow: hidden;
+            height: 100vh;
+            margin-top: -100px;
+            padding-top: 100px;
+            position: relative;
+            width: 100%;
+            backface-visibility: hidden;
+            will-change: overflow;
+        }
+
+        .back::before {
+          content: "";
+          display: block;
+          position: absolute;
+          z-index: -1;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: rgba(169,169,169,0.9);
+        }
+
+        .nav-link dropdown-toggle a:hover {
             color:ghostwhite;
         }
+
+        @media screen and (max-width: 480px) {
+          html { 
+            background: none no-repeat center center fixed; 
+          }
+        }
+        @media screen and (min-width: 481px) and (max-width: 900px) {
+          html {
+            background: none no-repeat center center fixed; 
+          }
+        }
+        @media screen and (min-width: 901px) {
+          html {
+            background: none no-repeat center center fixed; 
+          }
+        }
+
+        body, html{
+            background-image:url(/bitmesra.jpg);
+            
+            background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+
+            height:112.7%;
+            margin:0px;
+        } 
     </style>
 
 
@@ -46,15 +142,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
   <!-- font awesome-->
 <script src="https://use.fontawesome.com/48e5752e0a.js"></script>
-<style>
-body  {
-  background-image: url("assets/images/bg3.jpg");
-}
-</style>
+
 </head>
-<body>
+<body style="background-color:aliceblue;">
+
+ 
+     
+<div class="limiter" style="">
   
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark container-fluid "  style="background-color:darkcyan;color:white;width:100%;">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark container-fluid "  style="color:white;width:100%;background-color:rgba(0,139,139,0.9);">
      
       
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation ">
@@ -77,40 +173,40 @@ body  {
           </div>
     
 
-  </nav> 
-
-      <section style="margin-top: 50px;" class="">
-        <div class="mx-auto spacing " style="width:75%;">
+  </nav>
+   
+      <section style="height:50%;margin-top:10px;position:sticky;opacity:0.9"  class="">
+        <div class="mx-auto spacing " style="width:75%;height:50%;">
           <div class="col-md-12">
             <ul class="list-group bg">
-              <li class="list-group-item list-group-item-info">
-                <p><h5><b>Subject 1</b></h5><br />
+              <li class="list-group-item list-group-item-info" >
+                <p><h5 style="text-align:center"><b>Subject 1</b></h5 ><hr style="width:50%"/><br />
                   <div class="text-center">                    
-                    <button type="submit" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:darkcyan;color:ghostwhite" class="btn ">Section A</button>                   
-                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:darkcyan;color:ghostwhite" class="btn ">Section B</button>
-                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:darkcyan;color:ghostwhite" class="btn ">Section C</button>
-                  </div>
+                    <button type="submit" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:rgba(0,139,139,0.67);color:ghostwhite" class="btn ">Section A</button>                   
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:rgba(0,139,139,0.67);color:ghostwhite" class="btn ">Section B</button>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:rgba(0,139,139,0.67);color:ghostwhite" class="btn ">Section C</button>
+                  </div><hr style="margin-top:28px;width:50%"/>
                 </p>
                   
               </li>
 
               <li class="list-group-item list-group-item-info">
-                  <p ><h5><b>Subject 2</b></h5><br />
+                  <p ><h5 style="text-align:center"><b>Subject 2</b></h5><hr style="width:50%"/><br />
                   <div class="text-center">
-                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:darkcyan;color:ghostwhite" class="btn ">Section A</button>
-                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:darkcyan;color:ghostwhite" class="btn ">Section B</button>
-                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:darkcyan;color:ghostwhite" class="btn ">Section C</button>
-                  </div>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:rgba(0,139,139,0.67);color:ghostwhite" class="btn ">Section A</button>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:rgba(0,139,139,0.67);color:ghostwhite" class="btn ">Section B</button>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:rgba(0,139,139,0.67);color:ghostwhite" class="btn ">Section C</button>
+                  </div><hr style="margin-top:28px;width:50%"/>
                   </p>
               </li>
 
               <li class="list-group-item list-group-item-info">
-                <p><h5><b>Subject 3</b></h5><br />
+                <p><h5 style="text-align:center"><b>Subject 3</b></h5><hr style="width:50%"/><br />
                   <div class="text-center">
-                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:darkcyan;color:ghostwhite" class="btn ">Section A</button>
-                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:darkcyan;color:ghostwhite" class="btn ">Section B</button>
-                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:darkcyan;color:ghostwhite" class="btn ">Section C</button>
-                  </div>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:rgba(0,139,139,0.67);color:ghostwhite" class="btn ">Section A</button>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:rgba(0,139,139,0.67);color:ghostwhite" class="btn ">Section B</button>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:rgba(0,139,139,0.67);color:ghostwhite" class="btn ">Section C</button>
+                  </div><hr style="margin-top:28px;width:50%"/>
                 </p>
               </li>
 
@@ -118,7 +214,8 @@ body  {
            </div> 
         </div>
       </section>
-
+     
+ </div>
       
 </body>
 

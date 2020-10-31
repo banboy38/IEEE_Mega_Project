@@ -10,7 +10,7 @@
 <head>
 	<title>Login</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
@@ -38,7 +38,7 @@
 	
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('images/bitm.jpg');">
-			<div class="wraplogin100">
+			<div class="wraplogin100" >
 				<form class="login100-form validate-form" action="process.php" method="post">
                     <div class="ieee"><img src="images/logob.jpg" class="center"></div>
 					

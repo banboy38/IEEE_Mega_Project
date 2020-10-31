@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Login"
+    "\\Login",
+    "\\Login\\HOME",
+    "\\Login\\TABLEDISPLAY"
   ],
-  "SelectedNode": "\\Login\\process.php",
+  "SelectedNode": "\\Login\\TABLEDISPLAY\\cse.php",
   "PreviewInSolutionExplorer": false
 }
