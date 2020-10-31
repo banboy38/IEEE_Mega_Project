@@ -1,4 +1,4 @@
-
+﻿
 <?php
     include "connection.php";
 ?>
@@ -148,7 +148,7 @@
 
  
      
-<div class="" style="">
+<div class="back" style="">
   
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark container-fluid "  style="color:white;width:100%;background-color:rgba(0,139,139,0.9);">
      
