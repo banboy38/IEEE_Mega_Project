@@ -74,7 +74,7 @@
           height: 100%;
           top: 0;
           left: 0;
-          background-color: rgba(191, 197, 197, 0.90);
+          background-color: rgba(172, 178, 177, 0.90);
         }
 
         .nav-link dropdown-toggle a:hover {
@@ -166,7 +166,7 @@
   </nav>
    <div class="back" style="background-image:url(/bitmesra.jpg);">
       <section style="height:50%;margin-top:10px;position:sticky;opacity:0.9;width:100%"  class="">
-        <div class="mx-auto spacing " style="width:75%;height:50%;">
+        <div class="mx-auto spacing " style="width:81%;height:50%;">
           <div class="col-md-12">
             <ul class="list-group bg">
               <li class="list-group-item list-group-item-info" >
