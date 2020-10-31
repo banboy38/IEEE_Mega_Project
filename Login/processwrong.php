@@ -29,7 +29,7 @@
 
     } 
     
-    if($flag == 1 && $_SESSION["wrong"] == 1)
+    if($flag == 1)
     {
     
     header("Location: indexwrong.php"); 
