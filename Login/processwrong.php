@@ -20,7 +20,7 @@
     $_SESSION["name"] = $row->name;
     $_SESSION["status"]="Active";
 
-    header("Location: home.php");
+    header("Location: HOME/homepage.php");
        
     $flag = 0;
     

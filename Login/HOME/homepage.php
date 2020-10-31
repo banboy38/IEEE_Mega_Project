@@ -1,5 +1,4 @@
-
-<?php
+﻿<?php
     include "connection.php";
 
     header('Cache-Control: no-cache, must-revalidate');
@@ -140,7 +139,7 @@
         <script src="https://use.fontawesome.com/48e5752e0a.js"></script>
 
         </head>
-        <body style="">
+        <body style="background-image:url(/bitmesra.jpg)">
 
  
      
