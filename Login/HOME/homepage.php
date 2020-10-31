@@ -74,7 +74,7 @@
           height: 100%;
           top: 0;
           left: 0;
-          background-color: rgba(169,169,169,0.9);
+          background-color: rgba(191, 197, 197, 0.90);
         }
 
         .nav-link dropdown-toggle a:hover {
@@ -97,17 +97,7 @@
           }
         }
 
-        body, html{
-            background-image:url(/bitmesra.jpg);
-            
-            background-size: cover;
-            -webkit-background-size: cover;
-            -o-background-size: cover;
-            -moz-background-size: cover;
-
-            height:112.7%;
-            margin:0px;
-        } 
+        
     </style>
 
 
@@ -148,9 +138,9 @@
 
  
      
-<div class="back" style="">
+
   
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark container-fluid "  style="color:white;width:100%;background-color:rgba(0,139,139,0.9);">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark container-fluid "  style="color:white;width:100%;margin-top:0px;background-color:rgba(0,139,139,0.9);">
      
       
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation ">
@@ -174,8 +164,8 @@
     
 
   </nav>
-   
-      <section style="height:50%;margin-top:10px;position:sticky;opacity:0.9"  class="">
+   <div class="back" style="background-image:url(/bitmesra.jpg);">
+      <section style="height:50%;margin-top:10px;position:sticky;opacity:0.9;width:100%"  class="">
         <div class="mx-auto spacing " style="width:75%;height:50%;">
           <div class="col-md-12">
             <ul class="list-group bg">
