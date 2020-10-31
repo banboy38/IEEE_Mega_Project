@@ -1,11 +1,23 @@
-﻿
+
+<?php
+    include "connection.php";
+?>
+
 <!doctype html>
 <html>
 
 <head>
+
+    <style>
+        #opboi {
+            margin-bottom: 10px;margin-right:1px;margin-left:1px;
+        }
+    </style>
+
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Farmers Sales and Demand</title>
+  <title>Welcome</title>
   <link rel="shortcut icon" type="image/jpg" href="">
   <meta name="description" content="">
   <meta name="viewport"content="width=device-width">
@@ -42,12 +54,13 @@ body  {
 </head>
 <body>
   
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-info container-fluid " style="width:auto">
-    <ul class="navbar-nav"> 
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-info container-fluid " style="width:100%">
+     
       
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation ">
             <span class="navbar-toggler-icon navbar-toggler-right"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item ">
@@ -62,30 +75,31 @@ body  {
               </li>
             </ul>
           </div>
-    </ul>
+    
 
   </nav> 
 
       <section style="margin-top: 50px;" class="">
-        <div class="mx-auto spacing " style="width:300px;">
+        <div class="mx-auto spacing " style="width:75%;">
           <div class="col-md-12">
             <ul class="list-group bg">
               <li class="list-group-item list-group-item-info">
                 <p>Subject 1
-                  <div class="text-center">
-                    <button type="button" class="btn btn-outline-primary">Section A</button>
-                    <button type="button" class="btn btn-outline-primary">Section B</button>
-                    <button type="button" class="btn btn-outline-primary">Section C</button>
+                  <div class="text-center">                    
+                    <button type="submit" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;" class="btn btn-outline-primary">Section A</button>                   
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;" class="btn btn-outline-primary">Section B</button>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;" class="btn btn-outline-primary">Section C</button>
                   </div>
                 </p>
+                  
               </li>
 
               <li class="list-group-item list-group-item-info">
                   <p>Subject 2
                   <div class="text-center">
-                    <button type="button" class="btn btn-outline-primary">Section A</button>
-                    <button type="button" class="btn btn-outline-primary">Section B</button>
-                    <button type="button" class="btn btn-outline-primary">Section C</button>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;" class="btn btn-outline-primary">Section A</button>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;" class="btn btn-outline-primary">Section B</button>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;" class="btn btn-outline-primary">Section C</button>
                   </div>
                   </p>
               </li>
@@ -93,9 +107,9 @@ body  {
               <li class="list-group-item list-group-item-info">
                 <p>Subject 3
                   <div class="text-center">
-                    <button type="button" class="btn btn-outline-primary">Section A</button>
-                    <button type="button" class="btn btn-outline-primary">Section B</button>
-                    <button type="button" class="btn btn-outline-primary">Section C</button>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;" class="btn btn-outline-primary">Section A</button>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;" class="btn btn-outline-primary">Section B</button>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;" class="btn btn-outline-primary">Section C</button>
                   </div>
                 </p>
               </li>
@@ -104,6 +118,7 @@ body  {
            </div> 
         </div>
       </section>
+
       
 </body>
 

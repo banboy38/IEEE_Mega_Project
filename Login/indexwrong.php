@@ -1,3 +1,10 @@
+<?php
+	session_start();
+    $_SESSION["status"] = "Passive";
+	
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +38,7 @@
 	
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('images/bitm.jpg');">
-			<div class="wrap-login100">
+			<div class="wraplogin100">
 				<form class="login100-form validate-form" action="processwrong.php" method="post">
                     <div class="ieee"><img src="images/logob.jpg" class="center"></div>
 					
