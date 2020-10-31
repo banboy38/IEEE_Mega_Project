@@ -9,8 +9,8 @@
 <head>
 
     <style>
-        #opboi {
-            margin-bottom: 10px;margin-right:1px;margin-left:1px;
+        nav-link dropdown-toggle a:hover {
+            color:ghostwhite;
         }
     </style>
 
@@ -54,7 +54,7 @@ body  {
 </head>
 <body>
   
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-info container-fluid " style="width:100%">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark container-fluid "  style="background-color:darkcyan;color:white;width:100%;">
      
       
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation ">
@@ -64,11 +64,11 @@ body  {
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item ">
-                <a class="nav-link" href="#">User_Name <span class="sr-only">(current)</span></a>
+                <a class="nav-link" style="color:white" href="#"> Username <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" style="color:white" aria-expanded="false">More</a>
+                <div class="dropdown-menu" style="color:darkslategrey" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="">My Account</a>
                   <a class="dropdown-item" href="">Logout</a>
                 </div>
@@ -84,32 +84,32 @@ body  {
           <div class="col-md-12">
             <ul class="list-group bg">
               <li class="list-group-item list-group-item-info">
-                <p>Subject 1
+                <p><h5><b>Subject 1</b></h5><br />
                   <div class="text-center">                    
-                    <button type="submit" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;" class="btn btn-outline-primary">Section A</button>                   
-                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;" class="btn btn-outline-primary">Section B</button>
-                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;" class="btn btn-outline-primary">Section C</button>
+                    <button type="submit" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:darkcyan;color:ghostwhite" class="btn ">Section A</button>                   
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:darkcyan;color:ghostwhite" class="btn ">Section B</button>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:darkcyan;color:ghostwhite" class="btn ">Section C</button>
                   </div>
                 </p>
                   
               </li>
 
               <li class="list-group-item list-group-item-info">
-                  <p>Subject 2
+                  <p ><h5><b>Subject 2</b></h5><br />
                   <div class="text-center">
-                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;" class="btn btn-outline-primary">Section A</button>
-                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;" class="btn btn-outline-primary">Section B</button>
-                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;" class="btn btn-outline-primary">Section C</button>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:darkcyan;color:ghostwhite" class="btn ">Section A</button>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:darkcyan;color:ghostwhite" class="btn ">Section B</button>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:darkcyan;color:ghostwhite" class="btn ">Section C</button>
                   </div>
                   </p>
               </li>
 
               <li class="list-group-item list-group-item-info">
-                <p>Subject 3
+                <p><h5><b>Subject 3</b></h5><br />
                   <div class="text-center">
-                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;" class="btn btn-outline-primary">Section A</button>
-                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;" class="btn btn-outline-primary">Section B</button>
-                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;" class="btn btn-outline-primary">Section C</button>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:darkcyan;color:ghostwhite" class="btn ">Section A</button>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:darkcyan;color:ghostwhite" class="btn ">Section B</button>
+                    <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:darkcyan;color:ghostwhite" class="btn ">Section C</button>
                   </div>
                 </p>
               </li>
