@@ -1,7 +1,5 @@
-﻿<?php
+<?php
     include "connection.php";
-
-    header('Cache-Control: no-cache, must-revalidate');
     
     session_start();
     
@@ -170,10 +168,10 @@
 
           </nav>
 
-           <div class="back" style="background-image:url(/bitmesra.jpg);">
+           <div class="back" style="background-image:url(/HOME/bitmesra.jpg);">
 
               <section style="height:50%;margin-top:10px;position:sticky;opacity:0.9;width:100%"  class="">
-                <div class="mx-auto spacing " style="width:95%;height:50%;">
+                <div class="mx-auto spacing " style="width:81%;height:50%;">
                   <div class="col-md-12">
                     <ul class="list-group bg">
                       <li class="list-group-item list-group-item-info" >
