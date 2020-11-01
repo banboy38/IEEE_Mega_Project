@@ -38,6 +38,7 @@
                   align-items: center;
                   padding: 15px;
 
+                  background-attachment:fixed;
                   background-repeat: no-repeat;
                   background-position: center;
                   background-size: cover;
@@ -78,6 +79,7 @@
                   top: 0;
                   left: 0;
                   background-color: rgba(172, 178, 177, 0.90);
+
                 }
 
                 .nav-link dropdown-toggle a:hover {
