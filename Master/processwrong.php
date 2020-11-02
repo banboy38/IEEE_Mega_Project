@@ -1,4 +1,3 @@
-
 <?php
     include "connection.php";
     $sql = "select * from trialprof";
@@ -30,12 +29,10 @@
     } 
     
     if($flag == 1)
-    {
-    
+    {    
     header("Location: indexwrong.php"); 
     exit;
-    }
-    
+    }   
     
       
     ?>

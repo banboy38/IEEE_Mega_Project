@@ -6,8 +6,7 @@
     header('Cache-Control: no-cache, must-revalidate');
 
     session_start();
-    $_SESSION["status"] = "Passive";
-   
+    $_SESSION["status"] = "Passive";   
 ?> 
 
 <?php
@@ -35,4 +34,5 @@
     exit;
     }   
 
- ?>
+    
+    ?>
