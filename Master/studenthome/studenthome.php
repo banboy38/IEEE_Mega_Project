@@ -1,4 +1,13 @@
-﻿<!DOCTYPE HTML>
+<?php
+    include "connection.php";
+    
+    session_start();
+    
+    if($_SESSION["status"] == "StudentActive"){
+?>
+
+
+<!DOCTYPE HTML>
 <html>
 	<head>
 		<title>Home</title>
@@ -64,10 +73,10 @@
 
 				<!-- Menu -->
 					<nav id="menu">
-						<h2>User_Name</h2>
+						<h2><?php echo $_SESSION["name"] ?></h2>
 						<ul>
 							<li><a href="#">My Account</a></li>
-							<li><a href="#">Log Out</a></li>
+							<li><form action="/logoutfunc.php"><a href="/logoutfunc.php">Log Out</a></form></li>
 						</ul>
 					</nav>
 
@@ -135,3 +144,14 @@
 
 	</body>
 </html>
+
+<?php
+    }
+
+	else if($_SESSION["status"] == "ProfActive")
+         header("Location: /HOME/homepage.php");
+
+    else{
+         header("Location: /index.php");
+    }
+?>

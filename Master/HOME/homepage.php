@@ -3,7 +3,7 @@
     
     session_start();
     
-    if($_SESSION["status"] == "Active"){
+    if($_SESSION["status"] == "ProfActive"){
 ?>
 
         <!doctype html>
@@ -223,7 +223,8 @@
 <?php
     }
 
-    else{
-         header("Location: /index.php");
-    }
+    else if($_SESSION["status"] == "StudentActive")
+         header("Location: /studenthome/studenthome.php");
+    else
+        header("Location: /index.php");
 ?>

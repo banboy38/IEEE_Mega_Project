@@ -1,5 +1,20 @@
 <?php
+
+	header("Pragma: no-cache");
+    header('Cache-Control: no-cache, must-revalidate');
+
 	session_start();
+
+
+	if(isset($_SESSION["status"]) && $_SESSION["status"] == "ProfActive"){
+        header("Location: /HOME/homepage.php");
+		exit;
+     }
+	else if(isset($_SESSION["status"]) && $_SESSION["status"] == "StudentActive"){
+		header("Location: /studenthome/studenthome.php");
+		exit;
+	} 
+	else
     $_SESSION["status"] = "Passive";
 	
 ?>
