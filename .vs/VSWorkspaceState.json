@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    "\\Login"
+    "",
+    "\\Master",
+    "\\Master\\HOME"
   ],
+  "SelectedNode": "\\Master\\index.php",
   "PreviewInSolutionExplorer": false
 }
