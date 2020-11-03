@@ -161,7 +161,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" style="color:white" aria-expanded="false">More</a>
                         <div class="dropdown-menu" style="color:darkslategrey" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="">My Account</a>
-                          <a class="dropdown-item" href="/index.php">Logout</a>
+                          <form action="/logoutfunc.php"><a class="dropdown-item" href="/logoutfunc.php">Logout</a></form>
                         </div>
                       </li>
                     </ul>
