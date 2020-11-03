@@ -2966,28 +2966,28 @@ input, select, textarea {
 		opacity: 1;
 	}
 
-	#menu {
-		-moz-transform: translateX(22em);
-		-webkit-transform: translateX(22em);
-		-ms-transform: translateX(22em);
-		transform: translateX(22em);
-		-moz-transition: -moz-transform 0.45s ease, visibility 0.45s;
-		-webkit-transition: -webkit-transform 0.45s ease, visibility 0.45s;
-		-ms-transition: -ms-transform 0.45s ease, visibility 0.45s;
-		transition: transform 0.45s ease, visibility 0.45s;
-		position: fixed;
-		top: 0;
-		right: 0;
-		width: 22em;
-		max-width: 80%;
-		height: 100%;
-		-webkit-overflow-scrolling: touch;
-		background: #585858;
-		color: #ffffff;
-		cursor: default;
-		visibility: hidden;
-		z-index: 10002;
-	}
+#menu {
+	-moz-transform: translateX(22em);
+	-webkit-transform: translateX(22em);
+	-ms-transform: translateX(22em);
+	transform: translateX(22em);
+	-moz-transition: -moz-transform 0.45s ease, visibility 0.45s;
+	-webkit-transition: -webkit-transform 0.45s ease, visibility 0.45s;
+	-ms-transition: -ms-transform 0.45s ease, visibility 0.45s;
+	transition: transform 0.45s ease, visibility 0.45s;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 22em;
+	max-width: 80%;
+	height: 100%;
+	-webkit-overflow-scrolling: touch;
+	background: rgba(0,139,139,0.7);
+	color: #ffffff;
+	cursor: default;
+	visibility: hidden;
+	z-index: 10002;
+}
 
 		#menu > .inner {
 			-moz-transition: opacity 0.45s ease;

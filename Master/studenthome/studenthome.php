@@ -8,7 +8,7 @@
 
 
 <!DOCTYPE HTML>
-<html>
+<html style="scroll-behavior: smooth">
 	<head>
 		<title>Home</title>
 		<meta charset="utf-8" />
@@ -64,7 +64,7 @@
 							<!-- Nav -->
 								<nav>
 									<ul>
-										<li><a href="#menu"></a></li>
+										<li><a href="#menu" style="background-color:aliceblue;opacity:0.8"></a></li>
 									</ul>
 								</nav>
 
@@ -72,23 +72,26 @@
 					</header>
 
 				<!-- Menu -->
-					<nav id="menu">
+					<nav style="background: rgba(0,139,139,0.7);" id="menu">
 						<h2><?php echo $_SESSION["name"] ?></h2>
 						<ul>
 							<li><a href="#">My Account</a></li>
+							<?php if(isset($_SESSION["branch"])) { ?><li><a href="#">Branch List</a></li> <?php } else { ?> <li><a href="#">Course List</a></li> <?php } ?>
+							<?php if(isset($_SESSION["branch"])) { ?> <li><a href="#">Branch Change</a></li> <?php } ?>
 							<li><form action="/logoutfunc.php"><a href="/logoutfunc.php">Log Out</a></form></li>
 						</ul>
 					</nav>
-
+				
 				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+					<div style="background-color:aliceblue;border-radius:5px;opacity:0.8;margin-bottom:60px" id="main">
+						<div class="inner" style="margin-bottom:-40px;margin-top:-60px;opacity:1;">
 							<header>
 							</header>
 							<section class="tiles">
-								<article class="style1">
+
+								<article class="style3">
 									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
+										<img src="images/darkcyan.jpg" alt="" />
 									</span>
 									<a href="#">
 										<h2>SUBJECT 1</h2>
@@ -96,9 +99,9 @@
 										</div>
 									</a>
 								</article>
-								<article class="style2">
+								<article class="style3">
 									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
+										<img src="images/darkcyan.jpg" alt="" />
 									</span>
 									<a href="#">
 										<h2>SUBJECT 2</h2>
@@ -108,7 +111,7 @@
 								</article>
 								<article class="style3">
 									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
+										<img src="images/darkcyan.jpg" alt="" />
 									</span>
 									<a href="#">
 										<h2>SUBJECT 3</h2>
@@ -116,12 +119,32 @@
 										</div>
 									</a>
 								</article>
-								<article class="style4">
+								<article class="style3">
 									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
+										<img src="images/darkcyan.jpg" alt="" />
 									</span>
 									<a href="#">
 										<h2>SUBJECT 4</h2>
+										<div class="content">
+								        </div>
+									   </a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="images/darkcyan.jpg" alt="" />
+									</span>
+									<a href="#">
+										<h2>SUBJECT 5</h2>
+										<div class="content">
+								        </div>
+									   </a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="images/darkcyan.jpg" alt="" />
+									</span>
+									<a href="#">
+										<h2>SUBJECT 6</h2>
 										<div class="content">
 								        </div>
 									   </a>

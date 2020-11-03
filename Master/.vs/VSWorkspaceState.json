@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\studenthome",
+    "\\studenthome\\assets",
+    "\\studenthome\\assets\\css"
   ],
   "SelectedNode": "\\process.php",
   "PreviewInSolutionExplorer": false
