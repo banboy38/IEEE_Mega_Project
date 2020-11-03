@@ -74,9 +74,25 @@
 				<!-- Menu -->
 					<nav style="background: rgba(0,139,139,0.7);" id="menu">
 						<h2><?php echo $_SESSION["name"] ?></h2>
+						<h5 style="margin-top:-27px;font-size:12px"><?php echo $_SESSION["pos"] ?></h5>
+
+						<h5 style="margin-top:-15px;font-size:12px">						
+						<?php 
+							if($_SESSION["dept"] != "BPH" && $_SESSION["dept"] != "BARCH") 
+								echo $_SESSION["dept"];
+							else if($_SESSION["dept"] == "BPH") 
+								echo "Pharmceutical";
+							else if($_SESSION["dept"] == "BARCH") 
+								echo "Architecture";						
+						?>				
+						Department</h5><hr />
+
+
+
 						<ul>
 							<li><a href="#">My Account</a></li>
-							<?php if(isset($_SESSION["branch"])) { ?><li><a href="/list/list.php">Branch List</a></li> <?php } else { ?> <li><a href="/list/list.php">Course List</a></li> <?php } ?>
+							<!--<?php  /*if(isset($_SESSION["dept"])) { ?><li><a href="/list/list.php">Branch List</a></li> <?php } else { ?> <li><a href="/list/list.php">Course List</a></li> <?php } */ ?>-->
+							
 							<li><form action="/logoutfunc.php"><a href="/logoutfunc.php">Log Out</a></form></li>
 						</ul>
 					</nav>
@@ -93,7 +109,7 @@
 										<img src="images/darkcyan.jpg" alt="" />
 									</span>
 									<a href="#">
-										<h2>SUBJECT 1</h2>
+										<h2>SECTION A</h2>
 										<div class="content">
 										</div>
 									</a>
@@ -103,7 +119,7 @@
 										<img src="images/darkcyan.jpg" alt="" />
 									</span>
 									<a href="#">
-										<h2>SUBJECT 2</h2>
+										<h2>SECTION B</h2>
 										<div class="content">
 										</div>
 									</a>
@@ -113,41 +129,11 @@
 										<img src="images/darkcyan.jpg" alt="" />
 									</span>
 									<a href="#">
-										<h2>SUBJECT 3</h2>
+										<h2>SECTION C</h2>
 										<div class="content">
 										</div>
 									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/darkcyan.jpg" alt="" />
-									</span>
-									<a href="#">
-										<h2>SUBJECT 4</h2>
-										<div class="content">
-								        </div>
-									   </a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/darkcyan.jpg" alt="" />
-									</span>
-									<a href="#">
-										<h2>SUBJECT 5</h2>
-										<div class="content">
-								        </div>
-									   </a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/darkcyan.jpg" alt="" />
-									</span>
-									<a href="#">
-										<h2>SUBJECT 6</h2>
-										<div class="content">
-								        </div>
-									   </a>
-								</article>
+								</article>								
 							</section>
 						</div>
 					</div>

@@ -7,6 +7,8 @@
         $table = $_SESSION["branch"];
     else if(isset($_SESSION["course"]))
         $table = $_SESSION["course"];
+    else if(isset($_SESSION["dept"]))
+        $table = $_SESSION["dept"];
 
     $sql = "select * from $table;";    
     $result = mysqli_query($conn, $sql);
@@ -199,7 +201,7 @@
            <div class="back" style="background-image:url(/HOME/bitmesra.jpg);">
 
               <section style="height:50%;margin-top:10px;position:sticky;opacity:0.9;width:100%"  class="">
-                <div class="mx-auto spacing " style="width:81%;height:50%;">
+                <div class="mx-auto spacing " style="width:81%;height:50%;margin-bottom:30px;margin-top:10px">
                   <div class="col-md-12">
                     
                       <table width = "100%" cellspacing = "1" style="opacity:0.8" cellpadding = "10" class="opboi">    
@@ -283,7 +285,6 @@
     
 <?php
     }
-
     else if($_SESSION["status"] == "ProfActive")
          header("Location: /professorhome/professorhome.php");
     else

@@ -74,6 +74,18 @@
 				<!-- Menu -->
 					<nav style="background: rgba(0,139,139,0.7);" id="menu">
 						<h2><?php echo $_SESSION["name"] ?></h2>
+
+						<h5 style="margin-top:-30px;margin-left:1px;font-size:12px">						
+						<?php 
+							if(isset($_SESSION["branch"])) 
+								echo $_SESSION["branch"];
+							else if($_SESSION["course"] == "BPH") 
+								echo "Pharmceutical";
+							else if($_SESSION["course"] == "BARCH") 
+								echo "Architecture";						
+						?>				
+						Department</h5><hr />
+
 						<ul>
 							<li><a href="#">My Account</a></li>
 							<?php if(isset($_SESSION["branch"])) { ?><li><a href="/list/list.php">Branch List</a></li> <?php } else { ?> <li><a href="/list/list.php">Course List</a></li> <?php } ?>
