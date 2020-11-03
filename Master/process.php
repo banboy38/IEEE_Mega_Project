@@ -1,16 +1,13 @@
 <?php
     include "connection.php";
+    header('Cache-Control: no-cache, must-revalidate');
 
     session_start();
     $_SESSION["status"] = "Passive"; 
 
 
     $sql = "select * from trialprof";
-    $result = mysqli_query($conn, $sql);
-
-    header('Cache-Control: no-cache, must-revalidate');
-
-      
+    $result = mysqli_query($conn, $sql);      
 
     $flag = 0;
 
@@ -20,6 +17,8 @@
 
     $_SESSION["user"] = $row->user;
     $_SESSION["name"] = $row->name;
+    $_SESSION["dept"] = $row->department;
+    $_SESSION["pos"] = $row->position;
     $_SESSION["status"]="ProfActive";    
     
     header("Location: /professorhome/professorhome.php");
