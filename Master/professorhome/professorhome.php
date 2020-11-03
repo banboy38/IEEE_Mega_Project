@@ -51,7 +51,7 @@
 		</style>
 
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" href="main">
 		<div class="back" style="background-image:url(images/bitmesra.jpg);">
         <div class="container-login100" style="background-image: url('images/BIT%20M.jpg');"></div>
 			<div id="wrapper">
@@ -99,7 +99,7 @@
 				
 				<!-- Main -->
 					<div style="background-color:aliceblue;border-radius:5px;opacity:0.8;margin-bottom:60px" id="main">
-						<div class="inner" style="margin-bottom:-40px;margin-top:-60px;opacity:1;">
+						<div class="inner" style="margin-bottom:-40px;margin-top:-20px;opacity:1;">
 							<header>
 							</header>
 							<section class="tiles">

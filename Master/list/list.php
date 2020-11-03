@@ -39,6 +39,11 @@
                     color:ghostwhite;
                 }
 
+                .opboi{
+                    margin-left:auto;
+                    margin-right:auto;
+                }
+
                 .parallax {
                       /* The image used */
                       background-image: url("bitmesra.jpeg");
@@ -200,11 +205,11 @@
 
            <div class="back" style="background-image:url(/HOME/bitmesra.jpg);">
 
-              <section style="height:50%;margin-top:10px;position:sticky;opacity:0.9;width:100%"  class="">
-                <div class="mx-auto spacing " style="width:81%;height:50%;margin-bottom:30px;margin-top:10px">
-                  <div class="col-md-12">
+             
+               
+                  
                     
-                      <table width = "100%" cellspacing = "1" style="opacity:0.8" cellpadding = "10" class="opboi">    
+                      <table width = "10%" cellspacing = "1" style="opacity:0.8" cellpadding = "10" class="opboi">    
                             <tr style="background-color:darkcyan;color:white" >    
                         <td>Id</td>    
                         <td>Name</td>    
@@ -273,9 +278,10 @@
               
 
                         </table>
-                   </div> 
-                </div>
-              </section>
+                    
+                    
+                
+              
      
          </div>
       
