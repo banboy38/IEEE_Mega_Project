@@ -180,7 +180,7 @@
                   <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav mr-auto">
                       <li class="nav-item ">
-                        <a class="nav-link" style="color:white;" href="#" > <?php echo $_SESSION["name"]; ?> <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" style="color:white;" href="/index.php" > <?php echo $_SESSION["name"]; ?> <span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" style="color:white" aria-expanded="false">More</a>
