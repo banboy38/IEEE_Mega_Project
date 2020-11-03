@@ -7,7 +7,7 @@
 
 
 	if(isset($_SESSION["status"]) && $_SESSION["status"] == "ProfActive"){
-        header("Location: /HOME/homepage.php");
+        header("Location: /professorhome/professorhome.php");
 		exit;
      }
 	else if(isset($_SESSION["status"]) && $_SESSION["status"] == "StudentActive"){

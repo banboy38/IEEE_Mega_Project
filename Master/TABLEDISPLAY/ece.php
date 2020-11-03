@@ -1,12 +1,7 @@
 <?php    
     
 include "connection.php";    
-    
-if(isset($_GET['id'])){    
-$sql = "update tb2 set Club = 'OPBOI' where Id = 3;";    
-$result = mysqli_query($conn, $sql);    
-}    
-    
+       
 $sql = "select * from ece;";    
 $result = mysqli_query($conn, $sql);    
 ?>    

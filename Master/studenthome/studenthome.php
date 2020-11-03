@@ -76,7 +76,7 @@
 						<h2><?php echo $_SESSION["name"] ?></h2>
 						<ul>
 							<li><a href="#">My Account</a></li>
-							<?php if(isset($_SESSION["branch"])) { ?><li><a href="#">Branch List</a></li> <?php } else { ?> <li><a href="#">Course List</a></li> <?php } ?>
+							<?php if(isset($_SESSION["branch"])) { ?><li><a href="/list/list.php">Branch List</a></li> <?php } else { ?> <li><a href="/list/list.php">Course List</a></li> <?php } ?>
 							<?php if(isset($_SESSION["branch"])) { ?> <li><a href="#">Branch Change</a></li> <?php } ?>
 							<li><form action="/logoutfunc.php"><a href="/logoutfunc.php">Log Out</a></form></li>
 						</ul>
@@ -172,7 +172,7 @@
     }
 
 	else if($_SESSION["status"] == "ProfActive")
-         header("Location: /HOME/homepage.php");
+         header("Location: /professorhome/professorhome.php");
 
     else{
          header("Location: /index.php");

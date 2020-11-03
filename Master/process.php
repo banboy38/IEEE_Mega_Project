@@ -22,7 +22,7 @@
     $_SESSION["name"] = $row->name;
     $_SESSION["status"]="ProfActive";    
     
-    header("Location: HOME/homepage.php");
+    header("Location: /professorhome/professorhome.php");
        
     $flag = 1;
     
@@ -61,6 +61,7 @@
             if($_POST["username"] == $row->roll_no && $_POST["pass"] == $row->password) {
 
             $_SESSION["user"] = $row->roll_no;
+            $_SESSION["course"] = $row->branch;
             $_SESSION["name"] = $row->name;
             $_SESSION["status"]="StudentActive";    
     
@@ -81,6 +82,26 @@
 
             $_SESSION["user"] = $row->roll_no;
             $_SESSION["branch"]= $row->branch;
+            $_SESSION["name"] = $row->name;
+            $_SESSION["status"]="StudentActive";    
+    
+            header("Location: /studenthome/studenthome.php");
+       
+            $flag = 2;
+    
+            exit;
+            }
+        }
+
+         $sql = "select * from barch";
+         $result = mysqli_query($conn, $sql);
+
+         while($row = mysqli_fetch_object($result)) {
+
+            if($_POST["username"] == $row->roll_no && $_POST["pass"] == $row->password) {
+
+            $_SESSION["user"] = $row->roll_no;
+            $_SESSION["course"] = $row->branch;
             $_SESSION["name"] = $row->name;
             $_SESSION["status"]="StudentActive";    
     

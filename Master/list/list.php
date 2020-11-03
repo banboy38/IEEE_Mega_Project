@@ -3,7 +3,15 @@
     
     session_start();
     
-    if($_SESSION["status"] == "ProfActive"){
+    if(isset($_SESSION["branch"]))
+        $table = $_SESSION["branch"];
+    else if(isset($_SESSION["course"]))
+        $table = $_SESSION["course"];
+
+    $sql = "select * from $table;";    
+    $result = mysqli_query($conn, $sql);
+    
+    if($_SESSION["status"] == "StudentActive"){
 ?>
 
         <!doctype html>
@@ -12,6 +20,23 @@
         <head>
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <style>
+
+                #menu a:link, a:visited {
+
+                    background-color:ghostwhite;
+                    text-decoration:none;
+                    color:darkslategray;
+                    padding:10px 20px;
+                    margin: 0px;
+                    border-radius:5px 5px 5px 5px;
+
+                }
+
+                #menu a:hover, a:active{
+                    background-color:darkcyan;
+                    color:ghostwhite;
+                }
+
                 .parallax {
                       /* The image used */
                       background-image: url("bitmesra.jpeg");
@@ -160,8 +185,9 @@
                       <li class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" style="color:white" aria-expanded="false">More</a>
                         <div class="dropdown-menu" style="color:darkslategrey" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="">My Account</a>
-                          <form action="/logoutfunc.php"><a class="dropdown-item" href="/logoutfunc.php">Logout</a></form>
+                          <a style="text-align:center" class="dropdown-item" href="/index.php">Home</a>
+                          <a style="text-align:center" class="dropdown-item" href="">My Account</a>
+                          <a style="text-align:center" class="dropdown-item" href="/logoutfunc.php">Logout</a>
                         </div>
                       </li>
                     </ul>
@@ -175,41 +201,76 @@
               <section style="height:50%;margin-top:10px;position:sticky;opacity:0.9;width:100%"  class="">
                 <div class="mx-auto spacing " style="width:81%;height:50%;">
                   <div class="col-md-12">
-                    <ul class="list-group bg">
-                      <li class="list-group-item list-group-item-info" >
-                        <p><h5 style="text-align:center"><b>Subject 1</b></h5 ><hr style="width:50%"/><br />
-                          <div class="text-center">                    
-                            <button type="submit" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:rgba(0,139,139,0.67);color:ghostwhite" class="btn ">Section A</button>                   
-                            <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:rgba(0,139,139,0.67);color:ghostwhite" class="btn ">Section B</button>
-                            <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:rgba(0,139,139,0.67);color:ghostwhite" class="btn ">Section C</button>
-                          </div><hr style="margin-top:28px;width:50%"/>
-                        </p>
-                  
-                      </li>
+                    
+                      <table width = "100%" cellspacing = "1" style="opacity:0.8" cellpadding = "10" class="opboi">    
+                            <tr style="background-color:darkcyan;color:white" >    
+                        <td>Id</td>    
+                        <td>Name</td>    
+                        <td>Roll No.</td>
+                        <td> <?php 
+                                   if(isset($_SESSION["course"]))
+                                        { echo "Course" ; } 
+                                   else if(isset($_SESSION["branch"]))
+                                        {  echo "Branch" ; } 
+                             ?>
+                        </td>
+                        
+                
+                
+                            <?php    
+    
+                            while($row = mysqli_fetch_object($result)){    
+    
+    
+                            ?>
+                    
+                            <?php
+                            if(($row->id)%2 == 0)
+                            {
+                            ?>
+                   
+                            <tr style="background-color:lightcyan"> 
+                                <td>  
+                                    <?php echo $row->id;?>  
+                                </td>  
+                                <td>  
+                                    <?php echo $row->name;?>  
+                                </td>  
+                                <td>  
+                                    <?php echo $row->roll_no;?>  
+                                </td>  
+                                <td>  
+                                    <?php echo $row->branch;?>  
+                                </td>
+                            <?php } ?>
 
-                      <li class="list-group-item list-group-item-info">
-                          <p ><h5 style="text-align:center"><b>Subject 2</b></h5><hr style="width:50%"/><br />
-                          <div class="text-center">
-                            <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:rgba(0,139,139,0.67);color:ghostwhite" class="btn ">Section A</button>
-                            <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:rgba(0,139,139,0.67);color:ghostwhite" class="btn ">Section B</button>
-                            <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:rgba(0,139,139,0.67);color:ghostwhite" class="btn ">Section C</button>
-                          </div><hr style="margin-top:28px;width:50%"/>
-                          </p>
-                      </li>
+                            <?php
+                            if(($row->id)%2 != 0)
+                            {
+                            ?>
+                   
+                            <tr style="background-color:paleturquoise"> 
+                                <td>  
+                                    <?php echo $row->id;?>  
+                                </td>  
+                                <td>  
+                                    <?php echo $row->name;?>  
+                                </td>  
+                                <td>  
+                                    <?php echo $row->roll_no;?>  
+                                </td>  
+                                <td>  
+                                    <?php echo $row->branch;?>  
+                                </td>
+                            <?php } ?>
 
-                      <li class="list-group-item list-group-item-info">
-                        <p><h5 style="text-align:center"><b>Subject 3</b></h5><hr style="width:50%"/><br />
-                          <div class="text-center">
-                            <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:rgba(0,139,139,0.67);color:ghostwhite" class="btn ">Section A</button>
-                            <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:rgba(0,139,139,0.67);color:ghostwhite" class="btn ">Section B</button>
-                            <button type="button" style="margin-bottom: 10px;margin-right:1px;margin-left:1px;background-color:rgba(0,139,139,0.67);color:ghostwhite" class="btn ">Section C</button>
-                          </div><hr style="margin-top:28px;width:50%"/>
-                        </p>
-                      </li>
+
+
+                            <?php } ?>
 
               
 
-                    </ul>
+                        </table>
                    </div> 
                 </div>
               </section>
@@ -223,8 +284,8 @@
 <?php
     }
 
-    else if($_SESSION["status"] == "StudentActive")
-         header("Location: /studenthome/studenthome.php");
+    else if($_SESSION["status"] == "ProfActive")
+         header("Location: /professorhome/professorhome.php");
     else
         header("Location: /index.php");
 ?>
