@@ -39,10 +39,62 @@
                     color:ghostwhite;
                 }
 
-                .opboi{
+                table {
+                    margin-top:40px;
+                    margin-bottom:40px;
                     margin-left:auto;
-                    margin-right:auto;
+                    margin-right:auto;                    
+                    width:85%;
+                    border-collapse:collapse;
+
                 }
+
+                @media only screen and (max-width: 760px),
+                (min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	                    /* Force table to not be like tables anymore */
+	                    table, thead, tbody, th, td, tr { 
+		                    display: block; 
+	                    }
+	
+	                    /* Hide table headers (but not display: none;, for accessibility) */
+	                    thead tr { 
+		                    position: absolute;
+		                    top: -9999px;
+		                    left: -9999px;
+	                    }
+	
+	                    tr { border: 1px solid #ccc; }
+	
+	                    td { 
+		                    /* Behave  like a "row" */
+		                    border: none;
+		                    border-bottom: 1px solid #eee; 
+		                    position: relative;
+		                    padding-left: 50%; 
+	                    }
+	
+	                    td:before { 
+		                    /* Now like a table header */
+		                    position: absolute;
+		                    /* Top/left values mimic padding */
+		                    top: 6px;
+		                    left: 6px;
+		                    width: 45%; 
+		                    padding-right: 10px; 
+		                    white-space: nowrap;
+	                    }
+	
+	                    /*
+	                    Label the data
+	                    */
+	                    td:nth-of-type(1):before { content: "Id"; }
+	                    td:nth-of-type(2):before { content: "Name"; }
+	                    td:nth-of-type(3):before { content: "Roll No."; }
+	                    td:nth-of-type(4):before { content: "Branch"; }
+	                  
+                }
+
 
                 .parallax {
                       /* The image used */
@@ -123,12 +175,12 @@
                     background: none no-repeat center center fixed; 
                   }
                 }
-                @media screen and (min-width: 481px) and (max-width: 900px) {
+                @media screen and (min-width: 240px) and (max-width: 900px) {
                   html {
                     background: none no-repeat center center fixed; 
                   }
                 }
-                @media screen and (min-width: 901px) {
+                @media screen and (min-width: 180px) {
                   html {
                     background: none no-repeat center center fixed; 
                   }
@@ -209,18 +261,19 @@
                
                   
                     
-                      <table width = "10%" cellspacing = "1" style="opacity:0.8" cellpadding = "10" class="opboi">    
+                      <table cellspacing = "1" style="opacity:0.8" cellpadding = "10" class="opboi">    
                             <tr style="background-color:darkcyan;color:white" >    
-                        <td>Id</td>    
-                        <td>Name</td>    
-                        <td>Roll No.</td>
-                        <td> <?php 
+                        <th>Id</th>    
+                        <th>Name</th>    
+                        <th>Roll No.</th>
+                        <th> <?php 
                                    if(isset($_SESSION["course"]))
                                         { echo "Course" ; } 
                                    else if(isset($_SESSION["branch"]))
                                         {  echo "Branch" ; } 
                              ?>
-                        </td>
+                        </th>
+                        </tr>
                         
                 
                 
@@ -249,6 +302,7 @@
                                 <td>  
                                     <?php echo $row->branch;?>  
                                 </td>
+                            </tr>
                             <?php } ?>
 
                             <?php
@@ -277,7 +331,7 @@
 
               
 
-                        </table>
+                       </table>
                     
                     
                 

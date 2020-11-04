@@ -1,10 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\studenthome",
-    "\\studenthome\\assets",
-    "\\studenthome\\assets\\css"
+    "\\list\\assets\\css",
+    "\\studenthome"
   ],
-  "SelectedNode": "\\process.php",
+  "SelectedNode": "\\TABLEDISPLAY",
   "PreviewInSolutionExplorer": false
 }
