@@ -262,7 +262,7 @@
 
           </nav>
 
-           <div class="back" style="background-image:url(/HOME/bitmesra.jpg);">
+           <div class="back" style="background-image:url(/list/bitmesra.jpg);">
 
              
                
