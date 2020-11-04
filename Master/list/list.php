@@ -3,15 +3,22 @@
     
     session_start();
     
-    if(isset($_SESSION["branch"]))
+    if(isset($_SESSION["branch"])){
         $table = $_SESSION["branch"];
-    else if(isset($_SESSION["course"]))
+        $sql = "select * from $table;";    
+        $result = mysqli_query($conn, $sql);
+    }
+    else if(isset($_SESSION["course"])){
         $table = $_SESSION["course"];
-    else if(isset($_SESSION["dept"]))
+        $sql = "select * from $table;";    
+        $result = mysqli_query($conn, $sql);
+    }
+    else if(isset($_SESSION["dept"])){
         $table = $_SESSION["dept"];
-
-    $sql = "select * from $table;";    
-    $result = mysqli_query($conn, $sql);
+        $sql = "select * from $table;";    
+        $result = mysqli_query($conn, $sql);
+    }
+    
     
     if($_SESSION["status"] == "StudentActive"){
 ?>
