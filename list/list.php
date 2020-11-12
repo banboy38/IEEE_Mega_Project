@@ -5,6 +5,7 @@
     
     if(isset($_SESSION["branch"])){
         $table = $_SESSION["branch"];
+
         $sql = "select * from $table;";    
         $result = mysqli_query($conn, $sql);
     }
@@ -258,6 +259,9 @@
                       </li>
                     </ul>
                   </div>
+
+
+
     
 
           </nav>
