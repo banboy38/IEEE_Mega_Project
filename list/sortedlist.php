@@ -5,13 +5,14 @@
     
     if(isset($_SESSION["branch"])){
         $table = $_SESSION["branch"];
-
-        $sql = "select * from $table;";    
+        $_GET['search'] = strtoupper($_GET['search']);
+        $sql = "select * from $table where name like '%{$_GET['search']}%';";
         $result = mysqli_query($conn, $sql);
     }
     else if(isset($_SESSION["course"])){
         $table = $_SESSION["course"];
-        $sql = "select * from $table;";    
+        $_GET['search'] = strtoupper($_GET['search']);
+        $sql = "select * from $table where name like '%{$_GET['search']}%';";    
         $result = mysqli_query($conn, $sql);
     }
     else if(isset($_SESSION["dept"])){
@@ -268,11 +269,13 @@
                 
            <div class="back" style="background-image:url(/list/bitmesra.jpg);">    
            
-            <form method="get" style="width:80%;text-align:center;margin-top:10px;opacity:0.8" action="/list/sortedlist.php">
+
+           <form method="get" style="width:80%;text-align:center;margin-top:10px;opacity:0.8" action="/list/sortedlist.php">
                 <input type="search" name="search" placeholder="Search by Name" style="width:50%;border:hidden;outline:none;padding:7px;" />
                 <button type="submit" style="background-color:darkcyan;color:white;border:none;outline:none;padding:7px;"><b>SEARCH</b></button>
-            </form>    
-                      <table cellspacing = "1" style="opacity:0.8" cellpadding = "10" class="opboi">    
+            </form>
+                    
+                      <table cellspacing = "1" style="opacity:0.8;margin-bottom:200px" cellpadding = "10" class="opboi">    
                             <tr style="background-color:darkcyan;color:white" >    
                         <th>Id</th>    
                         <th>Name</th>    

@@ -100,67 +100,29 @@
 							<header>								
 							</header>
 							<section class="tiles">
+								<?php
+									if($_SESSION["type"] == "circ")
+										$result = mysqli_query($conn, "select * from circsub;");
+									else if($_SESSION["type"] == "noncirc")
+										$result = mysqli_query($conn, "select * from noncircsub;");
 
-								<article class="style3">
-									<span class="image">
-										<img src="images/darkcyan.jpg" alt="" />
-									</span>
-									<a href="#">
-										<h2>SUBJECT 1</h2>
-										<div class="content">
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/darkcyan.jpg" alt="" />
-									</span>
-									<a href="#">
-										<h2>SUBJECT 2</h2>
-										<div class="content">
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/darkcyan.jpg" alt="" />
-									</span>
-									<a href="#">
-										<h2>SUBJECT 3</h2>
-										<div class="content">
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/darkcyan.jpg" alt="" />
-									</span>
-									<a href="#">
-										<h2>SUBJECT 4</h2>
-										<div class="content">
-								        </div>
-									   </a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/darkcyan.jpg" alt="" />
-									</span>
-									<a href="#">
-										<h2>SUBJECT 5</h2>
-										<div class="content">
-								        </div>
-									   </a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/darkcyan.jpg" alt="" />
-									</span>
-									<a href="#">
-										<h2>SUBJECT 6</h2>
-										<div class="content">
-								        </div>
-									   </a>
-								</article>
+									while($row = mysqli_fetch_object($result)){
+								?>
+									
+									<article class="style3">
+											<span class="image">
+												<img src="images/darkcyan.jpg" alt="" />
+											</span>
+											<a href="/Subjects/Subject.php">
+												<h2><?php echo $row->subject?></h2>
+												<div class="content">
+												</div>
+											</a>
+										</article>
+									
+									
+								<?php  }?>
+								
 							</section>
 						</div>
 					</div>

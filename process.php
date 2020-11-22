@@ -42,6 +42,12 @@
             $_SESSION["user"] = $row->roll_no;
             $_SESSION["branch"]= $row->branch;
             $_SESSION["name"] = $row->name;
+
+            if($_SESSION["branch"] == "ECE" or $_SESSION["branch"] == "CSE" or $_SESSION["branch"] == "IT" or $_SESSION["branch"] == "EEE")
+                $_SESSION["type"] = "circ";
+            if($_SESSION["branch"] == "CIVIL" or $_SESSION["branch"] == "PROD" or $_SESSION["branch"] == "MECH" or $_SESSION["branch"] == "CHEM")
+                $_SESSION["type"] = "noncirc";         
+             
             $_SESSION["status"]="StudentActive";    
     
             header("Location: /studenthome/studenthome.php");
@@ -82,6 +88,12 @@
             $_SESSION["user"] = $row->roll_no;
             $_SESSION["branch"]= $row->branch;
             $_SESSION["name"] = $row->name;
+
+            if($_SESSION["branch"] == "ECE" or $_SESSION["branch"] == "CSE" or $_SESSION["branch"] == "IT" or $_SESSION["branch"] == "EEE")
+                $_SESSION["type"] = "circ";
+            if($_SESSION["branch"] == "CIVIL" or $_SESSION["branch"] == "PROD" or $_SESSION["branch"] == "MECH" or $_SESSION["branch"] == "CHEM")
+                $_SESSION["type"] = "noncirc"; 
+
             $_SESSION["status"]="StudentActive";    
     
             header("Location: /studenthome/studenthome.php");
@@ -123,6 +135,12 @@
             $_SESSION["user"] = $row->roll_no;
             $_SESSION["branch"]= $row->branch;
             $_SESSION["name"] = $row->name;
+
+            if($_SESSION["branch"] == "ECE" or $_SESSION["branch"] == "CSE" or $_SESSION["branch"] == "IT" or $_SESSION["branch"] == "EEE")
+                $_SESSION["type"] = "circ";
+            if($_SESSION["branch"] == "CIVIL" or $_SESSION["branch"] == "PROD" or $_SESSION["branch"] == "MECH" or $_SESSION["branch"] == "CHEM")
+                $_SESSION["type"] = "noncirc"; 
+
             $_SESSION["status"]="StudentActive";    
     
             header("Location: /studenthome/studenthome.php");
@@ -144,6 +162,12 @@
             $_SESSION["user"] = $row->roll_no;
             $_SESSION["branch"]= $row->branch;
             $_SESSION["name"] = $row->name;
+
+            if($_SESSION["branch"] == "ECE" or $_SESSION["branch"] == "CSE" or $_SESSION["branch"] == "IT" or $_SESSION["branch"] == "EEE")
+                $_SESSION["type"] = "circ";
+            if($_SESSION["branch"] == "CIVIL" or $_SESSION["branch"] == "PROD" or $_SESSION["branch"] == "MECH" or $_SESSION["branch"] == "CHEM")
+                $_SESSION["type"] = "noncirc"; 
+
             $_SESSION["status"]="StudentActive";    
     
             header("Location: /studenthome/studenthome.php");
@@ -165,6 +189,12 @@
             $_SESSION["user"] = $row->roll_no;
             $_SESSION["branch"]= $row->branch;
             $_SESSION["name"] = $row->name;
+
+            if($_SESSION["branch"] == "ECE" or $_SESSION["branch"] == "CSE" or $_SESSION["branch"] == "IT" or $_SESSION["branch"] == "EEE")
+                $_SESSION["type"] = "circ";
+            if($_SESSION["branch"] == "CIVIL" or $_SESSION["branch"] == "PROD" or $_SESSION["branch"] == "MECH" or $_SESSION["branch"] == "CHEM")
+                $_SESSION["type"] = "noncirc"; 
+
             $_SESSION["status"]="StudentActive";    
     
             header("Location: /studenthome/studenthome.php");
