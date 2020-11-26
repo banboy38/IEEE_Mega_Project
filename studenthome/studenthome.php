@@ -87,7 +87,7 @@
 						Department</h5><hr />
 
 						<ul>
-							<li><a href="#">My Account</a></li>
+							<li><a href="/myaccount/index.php">My Account</a></li>
 							<?php if(isset($_SESSION["branch"])) { ?><li><a href="/list/list.php">Branch List</a></li> <?php } else { ?> <li><a href="/list/list.php">Course List</a></li> <?php } ?>
 							<?php if(isset($_SESSION["branch"])) { ?> <li><a href="/branchchange/profile/index.php">Branch Change</a></li> <?php } ?>
 							<li><form action="/logoutfunc.php"><a href="/logoutfunc.php">Log Out</a></form></li>

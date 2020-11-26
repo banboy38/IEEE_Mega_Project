@@ -30,5 +30,6 @@
         $_SESSION["submitted"] = 2;
      }
 
-    header("Location: /branchchange/profile/index.php")
+    header("Location: /branchchange/profile/index.php");
+    exit;
 ?>
