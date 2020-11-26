@@ -3,7 +3,7 @@
     
     session_start();
     
-    if($_SESSION["status"] == "StudentActive"){
+    if(isset($_SESSION["status"]) and $_SESSION["status"] == "StudentActive"){
 	if($_SESSION["type"] == "circ")
 			$result = mysqli_query($conn, "select * from circsub;");
 	else if($_SESSION["type"] == "noncirc")
@@ -14,7 +14,7 @@
 
 <html>
 	<head>
-		<title>Paradigm Shift by HTML5 UP</title>
+		<title>Subject</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -35,7 +35,7 @@
 								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
 							</ul>
 						</header>
-						<div class="content" style="background-attachment:fixed;background-image:url(images/3.jpg);" >
+						<div class="content" style="background-attachment:scroll;background-image:url(images/3.jpg);" >
 							<span class="image fill" data-position="center"  ><img src="/images/3.jpg" alt="" /></span>
 						</div>
 					</section>
@@ -53,10 +53,10 @@
 				<!-- Section -->
 					<section>
 						<header>
-							<h2>Teacher</h2>
+							<h2>HoD</h2>
 						</header>
 						<div class="content" >
-							<p><strong>Mr.SK DASH</strong><br>Assistant ECE Professor<br>BIT MESRA  </p>
+							<p><strong>Dr. Srikanta Pal</strong><br>ECE Professor<br>BIT MESRA  </p>
 							
 						</div>
 					</section>

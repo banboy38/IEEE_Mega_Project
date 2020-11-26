@@ -89,7 +89,7 @@
 						<ul>
 							<li><a href="#">My Account</a></li>
 							<?php if(isset($_SESSION["branch"])) { ?><li><a href="/list/list.php">Branch List</a></li> <?php } else { ?> <li><a href="/list/list.php">Course List</a></li> <?php } ?>
-							<?php if(isset($_SESSION["branch"])) { ?> <li><a href="#">Branch Change</a></li> <?php } ?>
+							<?php if(isset($_SESSION["branch"])) { ?> <li><a href="/branchchange/profile/index.php">Branch Change</a></li> <?php } ?>
 							<li><form action="/logoutfunc.php"><a href="/logoutfunc.php">Log Out</a></form></li>
 						</ul>
 					</nav>
@@ -105,7 +105,6 @@
 										$result = mysqli_query($conn, "select * from circsub;");
 									else if($_SESSION["type"] == "noncirc")
 										$result = mysqli_query($conn, "select * from noncircsub;");
-
 									while($row = mysqli_fetch_object($result)){
 								?>
 									
