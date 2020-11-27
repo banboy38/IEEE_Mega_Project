@@ -9,9 +9,9 @@
      while($row = mysqli_fetch_object($result)){
         
         if($row->name == $_SESSION["name"]){
-            if($row->gpa < 9.2)
+            if($row->gpa < 8)
                 $flag = 2;
-            if($row->gpa >= 9.2)
+            if($row->gpa >= 8)
                 $flag = 1;
         }
             

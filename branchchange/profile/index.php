@@ -3,7 +3,7 @@
     
     session_start();
     
-    if($_SESSION["status"] == "StudentActive"){
+    if($_SESSION["status"] == "StudentActive" and isset($_SESSION['branch'])){
 ?>
 
 <?php
@@ -38,9 +38,16 @@
 	<body class="is-preload">
 			<div id="wrapper">
 					<section id="main">
-						<?php while($row = mysqli_fetch_object($result)){ ?>
+						
+					
+						
+						<?php 
+						$dp = str_replace('/','_',$_SESSION['user']);
+						while($row = mysqli_fetch_object($result)){ ?>
+						
 						<header>
-							<span class="avatar"><img src="images/default-profile-icon-24.jpg" alt="" /></span>
+							
+							<span class="avatar"><img src="/myaccount/assets/images/<?php echo $dp ?>.jpg" width="120" height="120" alt="No profile pic" /></span>
                             <h1><?php echo $row->name ?></h1>
                             <p><?php echo $row->roll_no ?></p>
                             <P>PREVIOUS SEMESTER-<?php echo $row->branch ?></P>
@@ -62,7 +69,7 @@
 						else{						
 						?>	
 							<form method="post" style="width:auto;text-align:center;margin-top:10px;opacity:0.8" action="/branchchange/profile/review.php">
-							<input type="search" name="gpa" placeholder="Enter GPA" style="width:100%;border:solid;border-width:thin;border-color:pink;outline:none;padding:7px;" /><br />
+							<input type="search" name="gpa" required placeholder="Enter GPA" style="width:100%;border:solid;border-width:thin;border-color:pink;outline:none;padding:7px;" /><br />
 							<button type="submit" style="background-color:pink;color:hotpink;border:none;outline:none;margin-top:10px"><b>Submit for review</b></button>
 						</form>
 						<?php

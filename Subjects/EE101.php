@@ -9,12 +9,11 @@
 	else if($_SESSION["type"] == "noncirc")
 			$result = mysqli_query($conn, "select * from noncircsub;");
 ?>
-
 <!DOCTYPE HTML>
 
 <html>
 	<head>
-		<title>Subject</title>
+		<title>BEE</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -24,28 +23,40 @@
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper"  >
+			<div id="wrapper">
 
 				<!-- Intro -->
 					<section class="intro">
 						<header>
-							<h1>EC101</h1>
-							<p>BASICS OF ELECTRONICS AND COMMUNICATION ENGINEERING</p>
+							<h1>EE101</h1>
+							<p>BASICS OF ELECTRICAL ENGINEERING</p>
 							<ul class="actions">
 								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
 							</ul>
 						</header>
-						<div class="content" style="background-attachment:scroll;background-image:url(images/3.jpg);" >
-							<span class="image fill" data-position="center"  ><img src="/images/3.jpg" alt="" /></span>
+						<div class="content">
+							<span class="image fill" data-position="center"><img src="images/EEE.jpg" alt="" /></span>
 						</div>
 					</section>
 
 				<!-- Section -->
 					<section id="first">
 						<header>
-							<h2>Syllabus</h2>
+							<h2>SYLLABUS</h2>
 						</header>
 						<div class="content">
+							<b><a target="_blank" href="https://www.bitmesra.ac.in/UploadedDocuments/deanugpg/files/B_Tech%20MO-2018%20CBCS%20Common%20Syllabus%2027th%20July.pdf">Syllabus.pdf</a></b>
+						
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>HOD</h2>
+						</header>
+						<div class="content">
+							<p><strong>Dr.P.R.Thakure</strong><br>EEE Professor<br>BIT MESRA  </p>
 							
 						</div>
 					</section>
@@ -53,18 +64,7 @@
 				<!-- Section -->
 					<section>
 						<header>
-							<h2>HoD</h2>
-						</header>
-						<div class="content" >
-							<p><strong>Dr. Srikanta Pal</strong><br>ECE Professor<br>BIT MESRA  </p>
-							
-						</div>
-					</section>
-
-				<!-- Section -->
-					<section >
-						<header>
-							<h2>Credits</h2>
+							<h2>CREDITS</h2>
 						</header>
 						<div class="content">
 							<p><strong>Four</strong>(4)</p>
@@ -80,14 +80,12 @@
 				
 					<section>
 						<header>
-							<h2>Branch</h2>
+							<h2>BRANCH</h2>
 						</header>
 						<div class="content">
-							<p><strong>Electronics and Communication Engineering</strong>(ECE)</p>
+                            <p><strong>Electrical and Electronics Engineering</strong></p>
 						</div>
 					</section>
-
-					</div>
 
 			</div>
 
@@ -101,7 +99,6 @@
 
 	</body>
 </html>
-
 <?php
     }
 

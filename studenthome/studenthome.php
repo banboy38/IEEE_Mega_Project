@@ -112,7 +112,7 @@
 											<span class="image">
 												<img src="images/darkcyan.jpg" alt="" />
 											</span>
-											<a href="/Subjects/Subject.php">
+											<a href="/Subjects/<?php echo $row->subcode ; ?>.php">
 												<h2><?php echo $row->subject?></h2>
 												<div class="content">
 												</div>

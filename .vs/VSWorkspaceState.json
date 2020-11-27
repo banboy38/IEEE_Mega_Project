@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\branchchange\\profile",
-    "\\myaccount",
-    "\\studenthome"
+    "\\studenthome",
+    "\\Subjects"
   ],
-  "SelectedNode": "\\myaccount\\viewproj.php",
+  "SelectedNode": "\\Subjects\\EC101.php",
   "PreviewInSolutionExplorer": false
 }
