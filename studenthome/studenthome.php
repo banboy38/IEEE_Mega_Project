@@ -101,10 +101,18 @@
 							</header>
 							<section class="tiles">
 								<?php
-									if($_SESSION["type"] == "circ")
-										$result = mysqli_query($conn, "select * from circsub;");
-									else if($_SESSION["type"] == "noncirc")
-										$result = mysqli_query($conn, "select * from noncircsub;");
+									if(isset($_SESSION['branch'])){
+										if($_SESSION["type"] == "circ")
+											$result = mysqli_query($conn, "select * from circsub;");
+										else if($_SESSION["type"] == "noncirc")
+											$result = mysqli_query($conn, "select * from noncircsub;");
+									}
+									else if(isset($_SESSION['course']) and $_SESSION['course'] == 'BPH'){
+										$result = mysqli_query($conn, "select * from pharmasub;");
+									}
+									else if(isset($_SESSION['course']) and $_SESSION['course'] == 'BARCH'){
+										$result = mysqli_query($conn, "select * from archsub;");
+									}
 									while($row = mysqli_fetch_object($result)){
 								?>
 									
