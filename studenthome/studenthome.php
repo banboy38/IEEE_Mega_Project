@@ -95,8 +95,8 @@
 					</nav>
 				
 				<!-- Main -->
-					<div style="background-color:aliceblue;border-radius:5px;opacity:0.8;margin-bottom:60px" id="main">
-						<div class="inner" style="margin-bottom:-40px;margin-top:-23px;opacity:1;">
+					<div id="main"> <!--style="background-color:aliceblue;border-radius:5px;opacity:0.8;margin-bottom:60px" -->
+						<div class="inner" style="margin-bottom:-40px;margin-top:-23px;opacity:0.85;">
 							<header>								
 							</header>
 							<section class="tiles">
